@@ -37,6 +37,8 @@ int main() {
     playerCar->carInfo();
     playerTrack->raceInfo();
 
+    Race* race = new Race(car, track);
+    race->race();
     
     std::cout << "Lap Time: " << generateRandomLapTime() << std::endl;
 
@@ -44,6 +46,7 @@ int main() {
     delete playerTrack;
     delete carFactory;
     delete trackFactory;
+    delete race;
 
     return 0;
 }
