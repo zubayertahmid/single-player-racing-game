@@ -1,3 +1,5 @@
+#ifndef V6_ENGINE_H
+#define V6_ENGINE_H
 #include <iostream>
 #include "EngineBehaviour.h" 
 
@@ -8,3 +10,4 @@ public:
         std::cout << "V6 Engine" << std::endl;
     }
 };
+#endif 

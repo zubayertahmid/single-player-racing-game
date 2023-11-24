@@ -5,8 +5,6 @@
 #ifndef CAR_H
 #define CAR_H
 
-#include "EngineBehavior.h"
-#include "TurbochargerBehavior.h"
 
 class Car {
 private:
@@ -25,19 +23,3 @@ public:
 };
 
 #endif // CAR_H
-private:
-    EngineBehavior* engine;
-    TurbochargerBehavior* turbocharger;
-
-public:
-    Car(EngineBehavior* e, TurbochargerBehavior* t) : engine(e), turbocharger(t) {}
-
-    void setEngine(EngineBehavior* e);
-
-    void setTurbocharger(TurbochargerBehavior* t);
-
-    void carInfo() const;
-    EngineBehavior* getEngine() const;
-
-};
-

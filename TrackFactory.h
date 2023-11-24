@@ -1,7 +1,8 @@
 #include <iostream>
 #include "EngineBehaviour.h"
-#include "TurboChargerBehaviour.h"
 #include "Car.h"
+#ifndef TRACK_FACTORY_H
+#define TRACK_FACTORY_H
 #include "Track.h"
 #include "CarFactory.h"
 #include "V6Engine.cpp"
@@ -14,3 +15,4 @@ class TrackFactory {
 public:
     virtual Track* createTrack() const = 0;
 };
+#endif

@@ -17,15 +17,3 @@ private:
 };
 
 #endif
-
-class Race {
-public:
-    Race(Car* car, Track* track);
-    void race();
-
-private:
-    Car* raceCar;
-    Track* raceTrack;
-};
-
-#endif

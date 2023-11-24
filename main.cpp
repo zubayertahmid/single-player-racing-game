@@ -10,6 +10,8 @@
 #include "BlueMoonBaySpeedwayFactory.cpp"
 #include "BBRacewayFactory.cpp"
 #include "CircuitDeSpaFrancorchampsFactory.cpp"
+#include "Race.h"
+
 
 
 // Helper function to generate random lap time
@@ -37,16 +39,10 @@ int main() {
     playerCar->carInfo();
     playerTrack->raceInfo();
 
-    Race* race = new Race(car, track);
+    Race* race = new Race(playerCar, playerTrack);
     race->race();
     
     std::cout << "Lap Time: " << generateRandomLapTime() << std::endl;
-
-    delete playerCar;
-    delete playerTrack;
-    delete carFactory;
-    delete trackFactory;
-    delete race;
 
     return 0;
 }

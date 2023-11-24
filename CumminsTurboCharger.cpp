@@ -1,12 +1,12 @@
-#include <iostream>
-#include "EngineBehaviour.h"
-#include "TurboChargerBehaviour.h"
-
 // Concrete Strategy - Cummins Turbocharger
-class CumminsTurbocharger : public TurbochargerBehavior {
+#ifndef CUMMINS_TURBOCHARGER_H
+#define CUMMINS_TURBOCHARGER_H
+class CumminsTurboCharger : public TurbochargerBehavior {
 public:
     void turbochargerInfo() const override {
         std::cout << "Cummins Turbocharger" << std::endl;
     }
 };
+
+#endif
 

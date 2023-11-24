@@ -3,7 +3,8 @@
 #include "TurboChargerBehaviour.h"
 #include "Car.h"
 #include "Track.h"
-
+#ifndef BB_RACEWAY_H
+#define BB_RACEWAY_H
 // Concrete Class - BB Raceway
 class BBRaceway : public Track {
 public:
@@ -16,7 +17,7 @@ public:
     }
 
 };
-
+#endif
 
 
 

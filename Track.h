@@ -2,7 +2,8 @@
 #include "EngineBehaviour.h"
 #include "TurboChargerBehaviour.h"
 #include "Car.h"
-
+#ifndef TRACK_H
+#define TRACK_H
 // Template Method Pattern - Track Class
 class Track {
 public:
@@ -16,3 +17,4 @@ public:
     virtual void finishLine() const = 0;
 
 };
+#endif
